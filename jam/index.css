@@ -1,0 +1,28 @@
+body {
+    align-content: center;
+}
+.blur{
+    display: flex;
+    height: 40px;
+    
+    background-color: rgba(26, 23, 23, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+}
+
+.ketikan {
+    width: 24ch;
+    animation: ketik 3s steps(22), blink .5s;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes ketik {
+    from {
+        width: 0
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
