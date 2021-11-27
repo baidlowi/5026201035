@@ -86,15 +86,16 @@
                 </div>
 
                 <div class="links m-b-md">
-                    <a href="https://baidlowi.github.io/formvalidation/">form</a>
-                    <a href="waktu/waktu.html">Waktu</a>
-                    <a href="/task2_javascript/index.html">Task Javasript</a>
-                    <a href="https://baidlowi.github.io/JqueryFade">Task Jquery</a>
+                    <a href="task1/index.html">Tugas 1</a>
+                    <a href="task2/index.html">Tugas 2</a>
+                    <a href="task3/home.html">Tugas 3</a>
+                    <a href="praktikum1/praktikum1.html">Praktikum1</a>
                     <a href="tugas4">Tugas 4</a>
+                    <a href="praktikum2">Praktikum 2</a>
                     <a href="ets2021">ETS</a>
-                    <a href="greetings">Greetings</a>
-                    <a href="tugas">tugaas php</a>
-
+                    <a href="greetings">Tugas PHP</a>
+                    <a href="pegawai">Tugas Pegawai</a>
+                    <a href="pendapatan">Tugas Pendapatan</a>
                 </div>
                 <div class="links">
                     <a href="https://baidlowi.github.io">Profile</a>

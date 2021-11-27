@@ -19,7 +19,7 @@
         }
 
         body{
-        background-image: url(https://i.pinimg.com/originals/f4/91/ac/f491acfc2b96e3f1be7f4548065ee461.jpg);
+        background-image: rgb(99, 99, 201);
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -28,7 +28,7 @@
             align-items: center;
             justify-content: center;
             width: 700px;
-            background: rgba(235, 241, 241, 0.842);
+            background: rgba(172, 171, 169, 0.781);
             padding: 20px;
             border-radius: 10px;
             margin: 50px auto;
@@ -60,9 +60,9 @@
         ?>
 
     <div class="container mt-3 mb-3 shadow-lg">
-        <center><h1>WELCOME!!</h1></center>
+        <center><h1>Selamat datang di Sistem Database Informasi Kami</h1></center>
         <br>
-            <p>Dear,
+            <p>Kepada
                 <?php
                 if ($sex == "male") {
                 echo "Mr.";
@@ -78,9 +78,8 @@
                 echo $last ." " .$first;
             ?>
             </p>
-            <pre>Welcome to Meldives!!</pre>
-            <pre>We wish you a pleasant stay and have a memorable experience.</pre>
-            <pre>Enjoy your holiday!</pre>
+            <pre>Akun Anda telah terdaftar di dalam sistem kami</pre>
+            <pre>Semoga informasi ini membantu dan nikmati semua fitur dalam sistem akmi</pre>
         </div>
     </body>
 </html>

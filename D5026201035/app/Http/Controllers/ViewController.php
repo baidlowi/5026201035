@@ -14,11 +14,11 @@ class ViewController extends Controller
 
     function showGreetings() {
         //resource untuk data / proses bisnis yang diolah
-        return view('showgreetings');
+        return view('greetingsshow');
     }
 
     function sayHi(Request $request) {
         //resource untuk data / proses bisnis yang diolah
-        return view('tugas');
+        return view('greetings');
     }
 }

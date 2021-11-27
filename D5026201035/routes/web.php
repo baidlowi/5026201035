@@ -19,7 +19,11 @@ Route::get('/', function () {
 });
 
 Route::get('tugas4', function () {
-    return view('tugas4js');
+    return view('tugas4jq');
+});
+
+Route::get('praktikum', function () {
+    return view('praktikum2');
 });
 
 //melalui controler
@@ -27,3 +31,18 @@ Route::get('ets2021',"ViewController@showETS") ;
 
 Route::get('greetings',"ViewController@showGreetings") ;
 Route::post('sayhi',"ViewController@sayHi") ;
+
+//route CRUD Pegawai
+Route::get('/pegawai','PegawaiController@index');
+Route::get('/pegawai/tambah','PegawaiController@tambah');
+Route::post('/pegawai/store','PegawaiController@store');
+Route::get('/pegawai/edit/{id}','PegawaiController@edit');
+Route::post('/pegawai/update','PegawaiController@update');
+Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+//route CRUD Pendapatan
+Route::get('/pendapatan','PendapatanController@index');
+Route::get('/pendapatan/tambah','PendapatanController@tambah');
+Route::post('/pendapatan/store','PendapatanController@store');
+Route::get('/pendapatan/edit/{ID}','PendapatanController@edit');
+Route::post('/pendapatan/update','PendapatanController@update');
+Route::get('/pendapatan/hapus/{ID}','PendapatanController@hapus');
