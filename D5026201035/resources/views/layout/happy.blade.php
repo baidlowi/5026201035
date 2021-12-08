@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand">Moh Hasyim Baidlowi</a>
+            <a class="navbar-brand" href="http://janganmalas.id:8000">Moh Hasyim Baidlowi</a>
             <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
@@ -36,7 +36,7 @@
         <br>
         @yield('judulhalaman')
         <br>
-        <a href="http://janganmalas.id:8000">Home</a>
+
         <br>
         @section('konten')
         @show
