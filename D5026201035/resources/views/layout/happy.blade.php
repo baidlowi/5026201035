@@ -42,9 +42,9 @@
         @show
     </div>
 
-    <footer class="bg-white sticky-footer">
-        <div class="container my-auto"><br>
-            <div class="my-auto copyright"><span>Hak Cipta Hasyim 2021</span></div>
+    <footer class="navbar navbar-dark bg-dark fixed-bottom sticky-footer">
+        <div class="container my-auto">
+            <div class="my-auto copyright"><span class="nav-link">Hak Cipta Hasyim 2021</span></div>
         </div>
     </footer>
 </body>

@@ -94,10 +94,13 @@
                     <a href="praktikum2">Praktikum 2</a>
                     <a href="ets2021">ETS</a>
                     <a href="greetings">Tugas PHP</a>
-                    <a href="pegawai">Tugas Pegawai</a>
-                    <a href="pendapatan">Tugas Pendapatan</a>
                 </div>
-                <div class="links">
+                <div class="links m-b-md">
+                    <a href="pegawai">Pegawai</a>
+                    <a href="pendapatan">Pendapatan</a>
+                    <a href="absen">Absen</a>
+                </div>
+                <div class="links m-b-md">
                     <a href="https://baidlowi.github.io">Profile</a>
                     <a href="https://github.com/baidlowi">GitHub</a>
                 </div>
