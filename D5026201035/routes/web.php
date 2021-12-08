@@ -28,7 +28,6 @@ Route::get('praktikum', function () {
 
 //melalui controler
 Route::get('ets2021',"ViewController@showETS") ;
-
 Route::get('greetings',"ViewController@showGreetings") ;
 Route::post('sayhi',"ViewController@sayHi") ;
 
@@ -46,3 +45,11 @@ Route::post('/pendapatan/store','PendapatanController@store');
 Route::get('/pendapatan/edit/{ID}','PendapatanController@edit');
 Route::post('/pendapatan/update','PendapatanController@update');
 Route::get('/pendapatan/hapus/{ID}','PendapatanController@hapus');
+
+//route CRUD Absen
+Route::get('/absen','AbsenController@index');
+Route::get('/absen/tambah','AbsenController@tambah');
+Route::post('/absen/store','AbsenController@store');
+Route::get('/absen/edit/{id}','AbsenController@edit');
+Route::post('/absen/update','AbsenController@update');
+Route::get('/absen/hapus/{id}','AbsenController@hapus');
