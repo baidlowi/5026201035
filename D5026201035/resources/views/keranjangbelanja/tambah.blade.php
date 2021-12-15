@@ -1,6 +1,6 @@
 @extends('layout.happy')
-@section('title', 'Data keranjangbelanja')
-@section('judulhalaman', 'TAMBAH keranjangbelanja')
+@section('title', 'Data keranjang belanja')
+@section('judulhalaman', 'TAMBAH keranjang belanja')
 
 @section('konten')
 

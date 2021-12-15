@@ -26,13 +26,9 @@
     <nav id="sidebar" class="navbar-dark bg-dark">
         <div class="p-4 pt-5">
             <img class="img logo rounded-circle mb-5 align-center" style="width:80px;" src="{{ asset('photo.png') }}" alt="">
-            <a class="navbar-brand" href="http://janganmalas.id:8000">Moh Hasyim Baidlowi</a>
-
+            <a class="navbar-brand" href="http://janganmalas.id:8000">Moh Hasyim Baidlowi</a><br>
+            <a class="navbar-brand">502620103</a><br>
                 <ul class="list-unstyled components mb-5">
-                    <li class="text-center">
-                        <h5>Moh Hasyim Baidlowi</h5>
-                        <p>5026201035</p>
-                    </li>
                   <li>
                       <a href="/pegawai">Pegawai</a>
                   </li>

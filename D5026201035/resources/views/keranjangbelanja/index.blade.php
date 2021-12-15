@@ -9,12 +9,6 @@
 	<br/>
 	<br/>
 
-    <p>Cari Data belanja :</p>
-	<form action="/keranjangbelanja/cari" method="GET">
-		<input type="text" name="cari" placeholder="Cari belanja .." value="{{ old('cari') }}">
-		<input type="submit" value="CARI">
-	</form><br>
-
 	<table class="table table-bordered table-sm">
 		<thead>
             <tr >
@@ -32,8 +26,8 @@
                 <td >{{ $loop->iteration }}</td>
                 <td >{{ $p->KodeBarang }}</td>
                 <td >{{ $p->Jumlah }}</td>
-                <td>{{ number_format($p->Harga, 0, ',', '.') }}</td>
-                <td>{{ number_format($p->Jumlah * $p->Harga, 0, ',', '.') }}</td>
+                <td >{{ number_format($p->Harga, 0, ',', '.') }}</td>
+                <td >{{ number_format($p->Jumlah * $p->Harga, 0, ',', '.') }}</td>
 
                 <td >
                     <a href="" class="btn btn-primary btn-sm" role="button">Beli</a>
