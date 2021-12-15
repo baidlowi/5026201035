@@ -67,5 +67,5 @@ Route::post('/keyboard/store','KeyboardController@store');
 Route::get('/keyboard/edit/{id}','KeyboardController@edit');
 Route::post('/keyboard/update','KeyboardController@update');
 Route::get('/keyboard/hapus/{id}','KeyboardController@hapus');
-Route::get('/keyboard','KeyboardController@index');
 Route::get('/keyboard/cari','KeyboardController@cari');
+Route::get('/keyboard/detail/{id}','KeyboardController@view');
