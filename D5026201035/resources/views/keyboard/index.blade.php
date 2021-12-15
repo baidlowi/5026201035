@@ -16,21 +16,21 @@
         </form>
     </div>
 	<table border="1">
-		<tr>
-            <th>No</th>
-			<th>Merk keyboard</th>
-			<th>Stock keyboard</th>
-            <th>Tersedia</th>
+		<tr border="1">
+            <th border="1">No</th>
+			<th border="1">Merk keyboard</th>
+			<th border="1">Stock keyboard</th>
+            <th border="1">Tersedia</th>
 
 		</tr>
 		@foreach($keyboard as $p)
-		<tr>
-            <td>{{ $loop->iteration }}</td>
-			<td>{{ $p->merkkeyboard }}</td>
-			<td>{{ $p->stockkeyboard }}</td>
-			<td>{{ $p->tersedia }}</td>
+		<tr border="1">
+            <td border="1">{{ $loop->iteration }}</td>
+			<td border="1">{{ $p->merkkeyboard }}</td>
+			<td border="1">{{ $p->stockkeyboard }}</td>
+			<td border="1">{{ $p->tersedia }}</td>
 
-			<td>
+			<td border="1">
 				<a href="/keyboard/detail/{{ $p->kodekeyboard  }}" class="btn btn-default btn-sm" role="button">View Detail</a>
                 <a href="/keyboard/edit/{{ $p->kodekeyboard  }}" class="btn btn-default btn-sm" role="button">Edit</a>
 				<a href="/keyboard/hapus/{{ $p->kodekeyboard  }}" class="btn btn-default btn-sm" role="button">Hapus</a>

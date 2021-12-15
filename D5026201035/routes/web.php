@@ -69,3 +69,13 @@ Route::post('/keyboard/update','KeyboardController@update');
 Route::get('/keyboard/hapus/{id}','KeyboardController@hapus');
 Route::get('/keyboard/cari','KeyboardController@cari');
 Route::get('/keyboard/detail/{id}','KeyboardController@view');
+
+//route CRUD Belanja
+Route::get('/keranjangbelanja','BelanjaController@index');
+Route::get('/keranjangbelanja/tambah','BelanjaController@tambah');
+Route::post('/keranjangbelanja/store','BelanjaController@store');
+Route::get('/keranjangbelanja/edit/{id}','BelanjaController@edit');
+Route::post('/keranjangbelanja/update','BelanjaController@update');
+Route::get('/keranjangbelanja/hapus/{id}','BelanjaController@hapus');
+Route::get('/keranjangbelanja/cari','BelanjaController@cari');
+Route::get('/keranjangbelanja/detail/{id}','BelanjaController@view');

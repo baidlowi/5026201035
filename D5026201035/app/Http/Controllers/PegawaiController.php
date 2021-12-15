@@ -80,19 +80,20 @@ public function hapus($id)
 
 public function cari(Request $request)
 {
-    // menangkap data pencarian
-    $cari = $request->cari;
+	// menangkap data pencarian
+	$cari = $request->cari;
 
-        // mengambil data dari table pegawai sesuai pencarian data
-    $pegawai = DB::table('pegawai')
-    ->where('pegawai_nama','like',"%".$cari."%")
-    ->orWhere('pegawai_alamat','like',"%".$cari."%")
+ 	// mengambil data dari table pegawai sesuai pencarian data
+	$pegawai = DB::table('pegawai')
+	->where('pegawai_nama','like',"%".$cari."%")
+	->orWhere('pegawai_alamat','like',"%".$cari."%")
     ->paginate();
 
-        // mengirim data pegawai ke view index
-    return view('index',['pegawai' => $pegawai]);
+    	// mengirim data pegawai ke view index
+	return view('index',['pegawai' => $pegawai]);
 
 }
+
 
 public function view($id)
 {
