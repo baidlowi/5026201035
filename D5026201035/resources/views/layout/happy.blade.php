@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Aplikasi Kepegawaian - @yield('title')</title>
+    <title>Aplikasi  - @yield('title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -12,27 +12,42 @@
     <script
         src="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js">
     </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+            overflow-x: hidden;
+        }
+        </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
+    <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar" class="navbar-dark bg-dark">
+        <div class="p-4 pt-5">
+            <img class="img logo rounded-circle mb-5 align-center" style="width:80px;" src="{{ asset('photo.png') }}" alt="">
             <a class="navbar-brand" href="http://janganmalas.id:8000">Moh Hasyim Baidlowi</a>
-            <div class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                <a class="nav-link">5026201035</a>
-                </li>
-            </ul>
-            <div class="d-flex">
-                <a class="navbar-brand" href="#">
-                <img src="photo.png" style="width:40px;" class="rounded-pill">
-                </a>
-            </div>
-            </div>
+
+                <ul class="list-unstyled components mb-5">
+                    <li class="text-center">
+                        <h5>Moh Hasyim Baidlowi</h5>
+                        <p>5026201035</p>
+                    </li>
+                  <li>
+                      <a href="/pegawai">Pegawai</a>
+                  </li>
+                  <li>
+                      <a href="/absen">Absen</a>
+                  </li>
+                  <li>
+                      <a href="/keyboard">Keyboard</a>
+                  </li>
+                </ul>
+
+
         </div>
     </nav>
-    <div class="container">
+    <div class="container my-5">
         <br>
         @yield('judulhalaman')
         <br>
@@ -43,10 +58,12 @@
     </div>
 
     <footer class="navbar navbar-dark bg-dark fixed-bottom sticky-footer">
-        <div class="container my-auto">
+        <div class="my-auto">
             <div class="my-auto copyright"><span class="nav-link">Hak Cipta Hasyim 2021</span></div>
         </div>
     </footer>
+
+
 </body>
 
 </html>

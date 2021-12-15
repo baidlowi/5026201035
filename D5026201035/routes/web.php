@@ -38,6 +38,8 @@ Route::post('/pegawai/store','PegawaiController@store');
 Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+Route::get('/pegawai/detail/{id}','PegawaiController@view');
+
 //route CRUD Pendapatan
 Route::get('/pendapatan','PendapatanController@index');
 Route::get('/pendapatan/tambah','PendapatanController@tambah');
@@ -53,3 +55,17 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+//Route Search
+Route::get('/pegawai','PegawaiController@index');
+Route::get('/pegawai/cari','PegawaiController@cari');
+
+//route CRUD keyboard
+Route::get('/keyboard','KeyboardController@index');
+Route::get('/keyboard/tambah','KeyboardController@tambah');
+Route::post('/keyboard/store','KeyboardController@store');
+Route::get('/keyboard/edit/{id}','KeyboardController@edit');
+Route::post('/keyboard/update','KeyboardController@update');
+Route::get('/keyboard/hapus/{id}','KeyboardController@hapus');
+Route::get('/keyboard','KeyboardController@index');
+Route::get('/keyboard/cari','KeyboardController@cari');
